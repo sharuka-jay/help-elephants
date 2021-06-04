@@ -1,0 +1,17 @@
+ body{
+     
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+     background-image: url('img/2.jpg');
+ }
+ 
+
+
+ .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="doc.css">
+    <title>Document</title>
+
+    <style>
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+        }
+        </style>
+</head>
+<body onload="myFunction()">
+
+
+    <div id="loader""></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      
+
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top mb-5">
+            <div class="container">
+              
+            <a class="navbar-brand" href="index.html"> <!-- brand -->
+              <img src="resize50.jpg" width="50" height="50" alt="">
+            </a>
+        
+         <div class="collapse navbar-collapse justify-content-end"">
+        
+           <ul class="navbar-nav" >
+                <li class="navbar-item">
+                <a href="#sec1" class="nav-link">Introduction</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link" href="#sec2">Solution</a> 
+                </li>
+                <li class="navbar-item">
+                <a href="#sec3" class="nav-link">Design Informations</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link" href="#hardware">Hardwere & Budget</a> 
+                </li>
+                <li class="navbar-item">
+                <a href="#limitation" class="nav-link">Limitations</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#conclusion">Conclusion</a> 
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#References">References</a> 
+                    </li>
+                <li class="nav-item ">
+                <a class="nav-link" href="#contribution">Contribution</a> 
+                </li>
+              
+              
+          </ul>
+         </div>
+        </div>
+          </nav>
+    
+          <div class="container mt-lg-8" style="margin-top: 100px;" id="sec1">
+              <h2>Introduction And Current Situation</h2>
+              <div class="row mt-lg-3">
+                  <div class="col-6">
+                      <p>
+                        The Sri Lankan elephant is a subspecies of the Asian elephant that is only found in Sri Lanka. Since 1987, the IUCN has classified the Sri Lankan elephant as endangered. The Sri Lankan elephant population is now restricted to the dry zone in the north, east, and southeast of Sri Lanka. The average herd size is between 12 and 20 individuals. The oldest female elephant leads it in the herd.
+                        As a result of construction and forest clearing, Elephants are pushed into smaller areas. In the first half of the 20th century, the Sri Lankan elephant population near around 7000 to 8000, and according to the DWC records, the current Sri Lankan elephant population is around 5000. In fact, some experts believe Sri Lankan elephants will be extinct in the wild within the next few decades. 
+                      </p>
+                      <p>
+                        The leading cause of death for elephants is clashing with villagers and farmers. The loss and destruction of their habitat have caused them to migrate through village areas. Elephants are also dying due to the high demand for ivory.
+                      </p>
+                      <p>
+                        Destruction of crops, destruction of houses and damage to human lives are common problems in Sri Lanka. Due to this situation, the people in those villages resort to shooting and trapping the stray elephants for their safety. This condition has become a major threat to the lives of wild elephants
+                      </p>
+                  </div>
+                  <div class="col-6 ps-5">
+                      <img src="img/3.jpg" alt="" class="intro">
+                  </div>
+              </div>
+              <hr>
+            </div>
+
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-6">
+
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Estimated Population</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>early 19th century </td>
+                        <td>12,000 to 14,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	early 20th century</td>
+                        <td>10,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td >1920 </td>
+                        <td>7,000 to 8,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	1969 </td>
+                        <td>between 1,745 and 2,455</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	1987</td>
+                        <td>between 2,500 and 3,435</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	 2000 </td>
+                        <td>between 3,150 and 4,400</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	2006 </td>
+                        <td>3,150</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	  2007 </td>
+                        <td>2,900-3,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">&#128024</th>
+                        <td>	 2011 </td>
+                        <td>5,879</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  
+                </div>
+                <div class="col-6">
+<img src="img/population.png" alt="" class="p-4">
+                </div>
+              </div>
+
+              <br>
+                  <hr>
+            </div>
+            
+    
+            <div class="container mt-5" id="sec2">
+                <h2>
+                    Solutions
+                </h2>
+                <p>
+                  We identified some short-term and long-term solutions for this situation
+                </p>
+                <ol style="list-style-type: circle; " class="mb-5">
+                    <li>
+                      constructing elephant fences between villages and forests.
+                    </li>
+                    <li>
+                      use a gps collar for wild elephants.
+                      
+                    </li>
+                    <li>
+                      stopping deforestation
+                    </li>
+                    <li>
+                      setting up elephant orphanages 
+                    </li>
+                
+                </ol>
+                <div class="row">
+                  <div class="col-6 px-5">
+                    <img src="img/solution.jpg" alt="">
+                  </div>
+                  <div class="col-6 px-5">
+                    <img src="img/fence.jpg" alt="">
+                  </div>
+                </div>
+                <p class="mt-5">
+                  Our solution is to use a gps collar for wild elephants.
+                  It monitors the roaming of wild elephants and sends a message to the villagers when they reach the village.
+                  when the message receive before the elephant arrives will enable the villagers to take action.
+                  This will enable safety of wild elephants and also humans. </p>
+                  <br>
+                  <hr>
+             </div>
+    
+             <div class="container" id="sec3">
+                 <h2>
+                    Design information
+                 </h2>
+                 
+                 <ol style="list-style-type: circle;">
+                     
+                     <li>
+                        The collars are strong and secure, with a belt made primarily of natural rubber that does not irritate the skin.
+                     </li>
+                     <li>
+                        The collars have an electronic module, also known as a "tracker," as well as a counterweight.
+                     </li>
+                     <li>
+                        The tracker acquires the GPS satellite location and sends it to the server via the local GSM network in seconds (2G, 3G, 4G).
+                     </li>
+                     <li>
+                        Since the tracker supports 2-way communication, you can adjust the configuration from 1 position per minute to 1 position per 24 hours remotely at any time.
+                     </li>
+                     <li>
+                        In the event of a failed transmission, the tracker will save up to 20,000 locations, which will be sent when the next link is established. Collars are delivered with a 4.5m length to match even the biggest elephant.
+                     </li>
+                     <li>
+                        The weight of one elephant collar is just 0.3 to 0.4 percent of an adult elephant's bodyweight. It varies depending on the circumference of the neck.
+                     </li>
+                     <li>
+                        The tracker is powered by an imported Lithium battery pack with the highest output available today, with a 10-year life span.
+                     </li>
+                     <li>
+                        When the tracker is in stand-by mode, the battery level decreases by around 3% per year. The number of transmissions every day determines the tracker's real existence.
+                     </li>
+                     <li>
+                        Every day, the battery level is remotely controlled and available on the gui and smartphone app, enabling you to fine-tune the setup and prolong the battery's life according to the conditions of the monitoring software even during storage times.
+                     </li>
+                 </ol>
+                 <br>
+                  <hr>
+             </div>
+             <!--end of design info-->
+
+                <div class="container">
+<h2>
+  Design
+</h2>
+<p>
+  Elephants are a very valuable resource to our country and the world. But they harm the farmers and the elephants live alone and in herds. Even if we try to chase the elephant, it will be a very difficult task. If we use the TUSKER TRACKER tracking belt, 
+  we can easily locate the elephants. Using this device can prevent harm to the villagers from elephants.
+</p>
+<p>
+  Using this system has a number of benefits. The primary benefit is that elephants will be protected. By marking corridors, we can analyze behavior by monitoring their locations and discourage activities that lead to a reduction in elephant population. Importantly, elephants are not harmed by this belt. Because The weight of one elephant collar is just 0.3 to 0.4 percent of an adult elephant's bodyweight. 
+  It varies depending on the circumference of the neck.
+</p>
+                  
+                </div>
+                <!--end od design-->
+
+                
+
+                <div class="container mt-5" >
+                  <div class="row">
+                    <div class="col-4 bg-secondary img-fluid  text-center" style="color: #ffffff;">
+                     <h3>
+                      How System Works
+                     </h3>
+                     <img src="img/getdata.jpg" alt="" style="width: 320px;">
+                     <br><br> <br>
+                     <p class="text-start" style="font-size: 16px;">
+                      Since the tracker supports 2-way communication, you can adjust the configuration from 1 position per minute to 1 position per 24 hours remotely at any time. The tracker acquires the GPS satellite location and sends it to the server via the local GSM network in seconds (2G, 3G, 4G). It lets you know where the elephants are and how long they have been in a certain place.
+                      When the elephant approaches the village, a notification goes to the Smart Phone.
+                     </p>
+                       
+
+                    </div>
+                    <div class="col-4 img-fluid text-center" style="color: #ffffff; background-color: rgb(124, 126, 128);">
+                      <h3>
+                        How to Install Belt
+                      </h3>
+                      <img src="img/install.jpg" alt="" style="width: 300px;">
+                      <br><br>
+                      <p class="text-start" style="font-size: 16px;">
+                        An Elephant must first be selected with the help of the Wildlife Board. The elephant should be then be anesthetized. Once the elephant is anesthetized, the TUSKER TRACKER tracking tape should be wrapped around the elephant's neck. This strap is fastened so as not to damage the elephant and it is very strong.
+                    
+                      </p>
+                      </div>
+                    <div class="col-4 bg-secondary img-fluid  text-center" style="color: #ffffff;">
+                      <h3>
+                        How to get data from the system
+                      </h3>
+                      <img src="img/datar.jpg" style="width: 300px;" alt="">
+                      <br><br>
+                      <p class="text-start" style="font-size: 16px;">
+                        The system receives locations through the gps tracking module. A server computer may be used to save the statistics. Data will be saved in the database, and information gathered during analysis will be saved as well. In the event that data is unable to be transmitted, the tracker has some storage space to save the data before it is possible to transmit it. The information can be accessed at any time by anyone who has access to a computer.
+                    
+                      </p>
+                      </div>
+                  </div><br>
+                  <hr>
+                </div>
+
+
+             
+
+
+            <div class="container mt-5" id="hardware">
+              <h2>
+                Hardware and Estimated budget
+              </h2>
+
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Component</th>
+                    <th scope="col">Estimated cost (lkr)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>ARDUINO UNO REV3 </td>
+                    <td>8,900</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>	NEO-6M GPS Module </td>
+                    <td>1,330</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td >Lithium-ion battery </td>
+                    <td>4,200</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>	Belt </td>
+                    <td>7,300</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>	Software </td>
+                    <td>150,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>	Computer </td>
+                    <td>50,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td style="font-weight: bold;">	TOTAL </td>
+                    <td style="font-weight: bold;">221,730</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+
+            <div class="container mt-5" id="limitation">
+              <h2>Limitations</h2>
+              <ul style="list-style-type: circle;">
+                <li>
+                  Normally this should be used for every elephant in the herd, but due to financial and practical difficulties, it has to be used for one elephant in a herd.
+                </li>
+                <li>
+                  Having to carry a large initial capital.
+                </li>
+                <li>
+                  Having to deal with installation difficulties.
+                </li>
+                <li>
+                  Technical and Repair issues.
+                </li>
+                <li>
+                  Having to replace the battery from time to time.
+                </li>
+                <li>
+                  The coller can be harmful to the elephant.
+                </li>
+              </ul><br>
+              <hr>
+            </div>
+            <!--end of limitation-->
+
+            <div class="container" id="conclusion">
+<h2>
+Conclusion
+</h2>
+<p>
+  Using this tracking belt, you can find out where the elephants are now, what is their root, and how much time they spend in the area. 
+  You can also find out where they are in the morning, noon and night.This device can be used to prevent other damage to the villagers from elephants.
+</p>
+<br><br>
+<hr>
+            </div>
+
+
+
+<!--end-->
+
+<div class="container" id="References" style="margin-top: 180px;">
+<h2>
+  References
+</h2>
+<div class="mx-4">
+  <p>
+    [1]
+  “Home - Savannah tracking,” 
+  Savannahtracking.com, 03-Dec-2018. [Online]. Available: http://www.savannahtracking.com/. [Accessed: 24-Mar-2021].
+  </p>
+  <p>
+    [2]	“Sri Lankan Elephant,” Worldwildlife.org. [Online]. Available: https://www.worldwildlife.org/species/sri-lankan-elephant. [Accessed: 24-Mar-2021].
+  
+  
+  </p>
+  <p>
+    [3]	Julian Blanc (IUCN SSC African Elephant Specialist Group), “IUCN Red List of Threatened Species: Loxodonta africana,” IUCN Red List of Threatened Species, 2008.
+  
+  </p>
+  <p>
+    [4]	L. J. Shaffer, K. K. Khadka, J. Van Den Hoek, and K. J. Naithani, “Human-elephant conflict: A review of current management strategies and future directions,” Front. Ecol. Evol., vol. 6, 2019.
+  </p>
+  <p>[5] World Wildlife Fund, "Sri Lankan Elephant | Species | WWF," [Online].
+    Available: https://www.worldwildlife.org/species/sri-lankan-elephant.
+    [Accessed 13 January 2021]</p>
+</div>
+
+</div>
+<!--end-->
+
+
+
+
+
+    </div>
+
+
+
+
+
+    
+    
+</body>
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+</html>

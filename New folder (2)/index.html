@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="home.css">
+    <title>Document</title>
+
+    
+</head>
+<body onload="myFunction()">
+    <nav class="navbar navbar-light bg-transparent navbar-expand-sm">
+        <a class="navbar-brand" href="#"> <!-- brand -->
+          <img src="resize50.jpg" width="50" height="50" alt="">
+        </a>
+    
+    <div class="collapse navbar-collapse justify-content-end"">
+    
+      <ul class="navbar-nav >
+        <li class="navbar-item">
+          <a href="" class="nav-link">Introduction</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Solution</a> 
+        </li>
+        <li class="navbar-item">
+          <a href="" class="nav-link">CPS</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Hardwere & Budget</a> 
+        </li>
+        <li class="navbar-item">
+          <a href="" class="nav-link">Limitations</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Contribution</a> 
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">References</a> 
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Contribution</a> 
+        </li>
+    </ul>
+    </div>
+      </nav>
+
+<!--loader-->
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom" style="transition: 0.2;">
+  
+  <div class="row" style="margin-top: 350px;" >
+    <div class="col-5"></div>
+    <div class="col-6">
+        <div class="card" style="background-color: #dfd9d979; color: rgb(19, 18, 18);" >
+            <div class="card-body">
+              <h5 class="card-title">Introduction</h5>
+            
+              <p class="card-text">" The Sri Lankan elephant is a subspecies of the Asian elephant that is only found in Sri Lanka. Since 1987, the IUCN has classified the Sri Lankan elephant as endangered. The Sri Lankan elephant population is now restricted to the dry zone in the north, east, and southeast of Sri Lanka. The average herd size is between 12 and 20 individuals. The oldest female elephant leads it in the herd."
+                  <a href="doc.html" class="card-link">Read More</a>
+              
+            </div>
+          </div>
+          </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+</div>
+
+
+
+</body>
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+</html>
